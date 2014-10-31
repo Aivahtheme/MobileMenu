@@ -22,23 +22,4 @@ Add the menu list with a class 'iva_mmenu'
     </li>
 </ul>
 
-Add the javascript into the head of your HTML page.
-
-(function($){  "use strict";
-	// Define your library strictly...
-	jQuery(document).ready(function ($) {
-	
-        jQuery('.iva-mobile-dropdown').click(function(){
-        	jQuery('.iva-mobile-menu').slideToggle(500);
-        	return false;
-        });
-        
-        // Child Menu Toggle
-        jQuery('.iva-children-indenter').click(function(){
-        	jQuery(this).parent().parent().toggleClass('iva-menu-open');
-        	jQuery(this).parent().parent().find('> ul').slideToggle();
-        	
-        	return false;
-        });
-	});       
-})();
+Copy the javascript from the iva-mmenu.js file and add into the head of your HTML page or enqueue the script in head of your page.
