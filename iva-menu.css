@@ -1,6 +1,9 @@
-/* Mobile Menu
-======================================================================== */
+/* AivahThemes
+ * Credits : Maqk, Mawk, N. Srinivas, S. Rafeeq
+ * Copyright: All Rights Reserved to www.aivahThemes.com
+ */
 
+.iva_mmenu { display: table; margin: 0 auto; }
 .iva-mobile-menu {
 	display: none;
 	position: relative;
@@ -10,10 +13,8 @@
     z-index: 99999;
 }
 .iva-mobile-menu > ul { margin: 0 auto; padding: 0; }
-.iva_mmenu { display: table; margin:0 auto; }
-.iva-mobile-menu ul li  {
-	list-style:none;
-}
+.iva-mobile-menu ul li  { list-style: none; }
+
 .iva-mobile-menu.iva_mobile_container > ul > li:first-child {
 	padding-top: 10px;	
 }
@@ -33,6 +34,7 @@
     padding: 14px 0 !important;
     font-size: 13px;
     color: #999999;
+    /* Smooth Color Transition on hover */
 	-webkit-transition: color 0.3s ease-out;
 	-moz-transition: color 0.3s ease-out;
 	-khtml-transition: color 0.3s ease-out;
@@ -46,10 +48,7 @@
 .iva-mobile-menu ul li.current-menu-ancestor > a,
 .iva-mobile-menu ul li a:hover { color: #ffffff;}
 
-.iva-mobile-menu ul li ul {
-	display: none;
-	margin-left: 20px;
-}
+.iva-mobile-menu ul li ul { display: none; margin-left: 20px; }
 .iva-children-indenter {  
 	position: absolute;
 	right: 0;
@@ -57,7 +56,19 @@
 	margin-top: -22px;
 	color:#999999;
 }
-
-.iva-children-indenter i { padding:14px; }
-
 .iva-menu-open .iva-children-indenter { color:#3888c8; }
+.iva-children-indenter i { 	padding:14px; }
+
+@media only screen and (max-width: 959px) {
+	.iva-mobile-dropdown {
+		display:block;
+		margin:0 0 0 auto;
+		height: 35px;
+		width: 40px;
+		position: relative;
+		cursor: pointer;
+		display: block;
+		background: transparent url(../images/menu-icon.png) 0 0 no-repeat;
+	}
+	.span.iva-children-indenter i { display:block; }
+}
